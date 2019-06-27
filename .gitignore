@@ -5,3 +5,9 @@ yarn-error.log
 
 # Build directory
 .DS_Store
+
+tmp/
+dist/
+
+.favorites.json
+.vscode
