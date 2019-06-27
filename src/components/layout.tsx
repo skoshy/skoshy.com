@@ -1,12 +1,17 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
 
-import Header from './header'
-import './layout.css'
+import Header from './header';
+import './layout.css';
+import { JsxEmit } from 'typescript';
 
-const Layout = ({ children, data }) => (
+interface Props {
+  children: React.ReactNode;
+}
+
+const Layout: React.FunctionComponent<Props> = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -18,12 +23,15 @@ const Layout = ({ children, data }) => (
         }
       }
     `}
-    render={data => (
+    render={(data): JSX.Element => (
       <>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: data.site.siteMetadata.description },
+            {
+              name: 'description',
+              content: data.site.siteMetadata.description,
+            },
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
@@ -41,10 +49,10 @@ const Layout = ({ children, data }) => (
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;
