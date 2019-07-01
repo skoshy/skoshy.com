@@ -1,4 +1,5 @@
 import React from 'react';
+import * as PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
 interface Props {
@@ -33,5 +34,9 @@ const Header: React.FunctionComponent<Props> = ({ siteTitle }) => (
     </div>
   </div>
 );
+
+Header.propTypes = {
+  siteTitle: PropTypes.string,
+};
 
 export default Header;
