@@ -1,6 +1,8 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
-import { Link } from 'gatsby';
+import FlexContainer from 'react-styled-flexbox';
+import { Button } from './Button';
+import { Link } from './Link';
 
 interface Props {
   siteTitle: string;
@@ -20,17 +22,13 @@ const Header: React.FunctionComponent<Props> = ({ siteTitle }) => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <FlexContainer>
+        <h1 style={{ flex: 1, margin: 0 }}>
+          <Link to="/">{siteTitle}</Link>
+        </h1>
+        <Button to="/page-2">hi</Button>
+        <Button to="https://google.com">external</Button>
+      </FlexContainer>
     </div>
   </div>
 );

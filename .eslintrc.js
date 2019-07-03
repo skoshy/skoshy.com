@@ -22,6 +22,7 @@ module.exports = {
         allowTypedFunctionExpressions: true,
       },
     ],
+    'react/prop-types': 0,
   },
   settings: {
     react: {
