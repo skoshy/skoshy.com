@@ -2,11 +2,30 @@
   "compileOnSave": true,
   "compilerOptions": {
     "target": "es6",
-    "module": "commonJS",
+    "module": "esnext",
     "moduleResolution": "node",
-    "jsx": "react",
-    "esModuleInterop": true
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
   },
-  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
-  "exclude": ["node_modules", "src/**/tests/*.ts", "src/**/tests/*.tsx"]
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/**/tests/*.ts",
+    "src/**/tests/*.tsx"
+  ]
 }

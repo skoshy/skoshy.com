@@ -11,3 +11,5 @@ dist/
 public/
 
 .favorites.json
+
+.next

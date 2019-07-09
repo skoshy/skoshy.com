@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link as GatsbyLink } from 'gatsby';
+import NextLink from 'next/link';
 
 interface Props {
   children: React.ReactNode;
@@ -28,14 +28,14 @@ export const Link = styled(
     // Use Gatsby Link for internal links, and <a> for others
     if (internal) {
       return (
-        <GatsbyLink
+        <NextLink
           to={to}
           activeClassName={activeClassName}
           partiallyActive={partiallyActive}
           {...other}
         >
           {children}
-        </GatsbyLink>
+        </NextLink>
       );
     }
     return (
