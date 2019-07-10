@@ -1,23 +1,27 @@
 import React from 'react';
+import { Main } from '../src/layouts/Main';
+import { Paragraph, Heading, Div } from '../src/components/Base';
 
 function Home() {
   return (
-    <>
-      <div className="alert alert-warning">
-        <h2>Under Construction</h2>
-        <p>Pardon the appearance, this site is still under construction!</p>
-      </div>
-      <h1>
+    <Main>
+      <Div className="alert alert-warning">
+        <Heading>Under Construction</Heading>
+        <Paragraph>
+          Pardon the appearance, this site is still under construction!
+        </Paragraph>
+      </Div>
+      <Heading>
         Howdy{' '}
         <span role="img" aria-label="smiley">
           😊
         </span>
-      </h1>
-      <h3>
+      </Heading>
+      <Heading>
         I&apos;m <abbr title="Pronounced STEHP-on">Stefan</abbr> (or Steve)
         Koshy
-      </h3>
-      <p>
+      </Heading>
+      <Paragraph>
         Working at{' '}
         <a href="https://common.com" rel="noopener noreferrer" target="_blank">
           Common
@@ -31,13 +35,13 @@ function Home() {
           Next Jumper
         </a>
         , currently residing in New York City
-      </p>
-      <h3>Web Development is my passion</h3>
-      <p>
+      </Paragraph>
+      <Heading>Web Development is my passion</Heading>
+      <Paragraph>
         Full Stack Javascript with React or Vue preferred, but experienced in
         PHP and Golang as well
-      </p>
-    </>
+      </Paragraph>
+    </Main>
   );
 }
 
