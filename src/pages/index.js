@@ -1,6 +1,5 @@
 import React from 'react';
-
-import Layout from '../components/layout';
+import { MainLayout as Layout } from '../layouts/Main';
 
 const IndexPage = () => (
   <Layout>
