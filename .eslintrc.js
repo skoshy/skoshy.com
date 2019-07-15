@@ -26,6 +26,7 @@ module.exports = {
       },
     ],
     'react/prop-types': 0,
+    'import/first': 1,
     'import/order': 1,
   },
   settings: {
