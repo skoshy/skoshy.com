@@ -10,7 +10,6 @@ tmp/
 dist/
 public/
 
-.vscode/
 .favorites.json
 
 .next
