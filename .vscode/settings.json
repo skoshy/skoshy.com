@@ -18,5 +18,28 @@
   },
   "[typescriptreact]": {
     "editor.formatOnSave": false
+  },
+  "cSpell.words": [
+    "stehp"
+  ],
+  "workbench.colorCustomizations": {
+    "scrollbarSlider.activeBackground": "#ffffff60",
+    "scrollbarSlider.hoverBackground": "#ffffff27",
+    "scrollbarSlider.background": "#ffffff3a",
+    "editor.selectionHighlightBorder": "#667c97",
+    "editorIndentGuide.background": "#444",
+    "editorIndentGuide.activeBackground": "#666",
+    "activityBar.background": "#9b5357",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#233e21",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "titleBar.activeBackground": "#7a4144",
+    "titleBar.inactiveBackground": "#7a414499",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "statusBar.background": "#7a4144",
+    "statusBarItem.hoverBackground": "#9b5357",
+    "statusBar.foreground": "#e7e7e7"
   }
 }

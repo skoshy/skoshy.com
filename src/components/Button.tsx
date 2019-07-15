@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from './Link';
 
-export const Button = styled(({ children, ...props }) => (
-  <Link {...props}>{children}</Link>
-))`
+export const Button = styled(
+  ({ children, ...props }): JSX.Element => <Link {...props}>{children}</Link>
+)`
   display: inline-block;
   text-align: center;
   border-radius: 1em;
