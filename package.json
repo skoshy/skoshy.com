@@ -21,10 +21,6 @@
     "typography": "^0.16.19",
     "typography-theme-bootstrap": "^0.16.19"
   },
-  "keywords": [
-    "nextjs"
-  ],
-  "license": "MIT",
   "devDependencies": {
     "@types/node": "^12.6.1",
     "@types/prop-types": "^15.7.1",
@@ -40,6 +36,10 @@
     "prettier": "^1.18.2",
     "typescript": "^3.5.2"
   },
+  "keywords": [
+    "nextjs"
+  ],
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
