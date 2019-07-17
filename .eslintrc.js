@@ -39,6 +39,19 @@ module.exports = {
         ],
       },
     ],
+    'no-restricted-imports': [
+      'error',
+      {
+        paths: [
+          {
+            name: 'react',
+            importNames: ['FunctionComponent'],
+            message:
+              "Please import from 'src/utils/types' instead.",
+          },
+        ],
+      },
+    ],
   },
   settings: {
     react: {
