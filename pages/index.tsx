@@ -1,10 +1,10 @@
 import React from 'react';
-import { Main } from '../src/layouts/Main';
+import { MainLayout } from '../src/layouts/Main';
 import { Paragraph, Heading, Div } from '../src/components/Base';
 
 function Home() {
   return (
-    <Main>
+    <MainLayout>
       <Div className="alert alert-warning">
         <Heading>Under Construction</Heading>
         <Paragraph>
@@ -41,7 +41,7 @@ function Home() {
         Full Stack Javascript with React or Vue preferred, but experienced in
         PHP and Golang as well
       </Paragraph>
-    </Main>
+    </MainLayout>
   );
 }
 

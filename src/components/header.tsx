@@ -1,14 +1,11 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
 import FlexContainer from 'react-styled-flexbox';
-import { Button } from './Button';
+import { FunctionComponent } from 'src/utils/types';
 import { Link } from './Link';
+import { Button } from './Button';
 
-interface Props {
-  siteTitle: string;
-}
-
-const Header: React.FunctionComponent<Props> = ({ siteTitle }) => (
+const Header: FunctionComponent = ({ siteTitle }) => (
   <div
     style={{
       background: 'rebeccapurple',
