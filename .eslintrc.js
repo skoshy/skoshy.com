@@ -25,7 +25,11 @@ module.exports = {
         allowTypedFunctionExpressions: true,
       },
     ],
-    'import/first': 1,
+    "react/prop-types": 2,
+    "react/no-unused-prop-types": 2,
+    "react/default-props-match-prop-types": 2,
+    "react/require-default-props": 2,
+    'import/first': 2,
     'import/order': [
       'error',
       {

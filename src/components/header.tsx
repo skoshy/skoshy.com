@@ -1,5 +1,5 @@
 import React from 'react';
-import * as PropTypes from 'prop-types';
+import * as PT from 'prop-types';
 import FlexContainer from 'react-styled-flexbox';
 import { FunctionComponent } from 'src/utils/types';
 import { Link } from './Link';
@@ -31,7 +31,11 @@ const Header: FunctionComponent = ({ siteTitle }) => (
 );
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  siteTitle: PT.string,
+};
+
+Header.defaultProps = {
+  siteTitle: '',
 };
 
 export default Header;
