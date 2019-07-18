@@ -32,7 +32,6 @@ export const Button = (() => {
     display: inline-block;
     text-align: center;
     border-radius: 1em;
-    ${props => props.color}
     padding: 0.8em;
     border: 2px solid white;
     margin: 0 0.5em;
