@@ -27,7 +27,7 @@ export const Button = (() => {
   component.propTypes = propTypes;
   component.defaultProps = defaultProps;
 
-  // - created a styled version of the component
+  // - create a styled version of the component
   const styledComponent = styled<FC<typeof propTypes>>(component)`
     display: inline-block;
     text-align: center;
