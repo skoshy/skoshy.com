@@ -1,11 +1,19 @@
 import React from 'react';
-import * as PT from 'prop-types';
+import PT from 'prop-types';
 import FlexContainer from 'react-styled-flexbox';
-import { FunctionComponent } from 'src/utils/types';
+import { FC } from 'src/utils/types';
 import { Link } from './Link';
 import { Button } from './Button';
 
-const Header: FunctionComponent = ({ siteTitle }) => (
+const propTypes = {
+  siteTitle: PT.string,
+};
+
+const defaultProps = {
+  siteTitle: '',
+};
+
+export const Header: FC<typeof propTypes> = ({ siteTitle }) => (
   <div
     style={{
       background: 'rebeccapurple',
@@ -30,12 +38,5 @@ const Header: FunctionComponent = ({ siteTitle }) => (
   </div>
 );
 
-Header.propTypes = {
-  siteTitle: PT.string,
-};
-
-Header.defaultProps = {
-  siteTitle: '',
-};
-
-export default Header;
+Header.propTypes = propTypes;
+Header.defaultProps = defaultProps;
