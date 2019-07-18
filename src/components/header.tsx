@@ -1,7 +1,7 @@
 import React from 'react';
 import PT from 'prop-types';
 import FlexContainer from 'react-styled-flexbox';
-import { FC } from 'src/utils/types';
+import { FC, InferPropsTypes } from 'src/utils/types';
 import { Link } from './Link';
 import { Button } from './Button';
 
@@ -13,7 +13,9 @@ const defaultProps = {
   siteTitle: '',
 };
 
-export const Header: FC<typeof propTypes> = ({ siteTitle }) => (
+export const Header: FC<
+  InferPropsTypes<typeof propTypes, typeof defaultProps>
+> = ({ siteTitle }) => (
   <div
     style={{
       background: 'rebeccapurple',

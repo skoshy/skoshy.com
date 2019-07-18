@@ -1,34 +1,37 @@
 import React from 'react';
 import styled from 'styled-components';
 import PT from 'prop-types';
-import { FC } from 'src/utils/types';
+import { FC, InferPropsTypes } from 'src/utils/types';
 import { Link } from './Link';
 
 export const Button = (() => {
-  // - define propTypes and defaultProps
+  // + [edit] define propTypes and defaultProps
   const propTypes = {
-    to: PT.node.isRequired,
+    to: PT.any.isRequired,
     children: PT.node.isRequired,
-    color: PT.string.isRequired,
-    blah: PT.string,
+    // color: PT.string.isRequired,
+    // blah: PT.string,
   };
   const defaultProps = {
-    blah: '',
+    // blah: '',
   };
 
-  // - define the component itself
-  const component: FC<typeof propTypes> = ({ children, color, ...props }) => (
-    <Link {...props}>
-      {children} {color}
+  // - [don't edit] generate the TS types for this component
+  type types = InferPropsTypes<typeof propTypes, typeof defaultProps>;
+
+  // + [edit] define the component itself
+  const Component: FC<types> = ({ children, to, ...props }) => (
+    <Link to={to} {...props}>
+      {children}
     </Link>
   );
 
-  // - map the propTypes and defaultProps to the component
-  component.propTypes = propTypes;
-  component.defaultProps = defaultProps;
+  // - [don't edit] map the propTypes and defaultProps to the component
+  Component.propTypes = propTypes;
+  Component.defaultProps = defaultProps;
 
-  // - create a styled version of the component
-  const styledComponent = styled<FC<typeof propTypes>>(component)`
+  // + [edit] create a styled version of the component
+  const StyledComponent = styled(Component)<types>`
     display: inline-block;
     text-align: center;
     border-radius: 1em;
@@ -37,5 +40,7 @@ export const Button = (() => {
     margin: 0 0.5em;
   `;
 
-  return styledComponent;
+  return StyledComponent;
 })();
+
+Button.displayName = 'Button';

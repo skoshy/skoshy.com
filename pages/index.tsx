@@ -1,4 +1,5 @@
 import React from 'react';
+import { Header } from '../src/components/Header';
 import { MainLayout } from '../src/layouts/Main';
 import { Paragraph, Heading, Div } from '../src/components/Base';
 
@@ -6,6 +7,7 @@ function Home() {
   return (
     <MainLayout>
       <Div className="alert alert-warning">
+        <Header />
         <Heading>Under Construction</Heading>
         <Paragraph>
           Pardon the appearance, this site is still under construction!
