@@ -26,10 +26,10 @@ module.exports = {
         allowExpressions: true,
       },
     ],
-    'react/prop-types': 2,
-    'react/no-unused-prop-types': 0, // we keep this disabled because a proptype can be specified for use in styled-components, but not used in the actual component declaration
-    'react/default-props-match-prop-types': 2,
-    'react/require-default-props': 2,
+    'react/prop-types': 0,
+    // 'react/no-unused-prop-types': 0, // we keep this disabled because a proptype can be specified for use in styled-components, but not used in the actual component declaration
+    // 'react/default-props-match-prop-types': 2,
+    // 'react/require-default-props': 2,
     'import/first': 2,
     'import/order': [
       'error',
