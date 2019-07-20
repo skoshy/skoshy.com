@@ -45,5 +45,6 @@
     "statusBar.background": "#7a4144",
     "statusBarItem.hoverBackground": "#9b5357",
     "statusBar.foreground": "#e7e7e7"
-  }
+  },
+  "favorites.sortDirection": "ASC"
 }

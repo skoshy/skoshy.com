@@ -3,24 +3,21 @@ import { css } from 'styled-components';
 import NextLink from 'next/link';
 import { FC } from 'src/utils/types';
 
-const internalLinkRegex = /^\/(?!\/)/;
-
 interface Types {
-  children: JSX.Element;
   to: string;
 }
 
+const style = css`
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+`;
+
 export const Link: FC<Types> = ({ children, to, ...other }) => {
-  const isInternal = internalLinkRegex.test(to);
+  const isInternal = /^\/(?!\/)/.test(to);
 
   return (
-    <div
-      css={css`
-        color: white;
-        font-size: 1em;
-        text-decoration: none;
-      `}
-    >
+    <div css={style}>
       {isInternal ? (
         <NextLink href={to} {...other}>
           {children}

@@ -1,9 +1,10 @@
 import React from 'react';
-import { Header } from '../src/components/Header';
-import { MainLayout } from '../src/layouts/Main';
-import { Paragraph, Heading, Div } from '../src/components/Base';
+import { MainLayout } from 'src/layouts/Main';
+import { Header } from 'src/components/Header';
+import { Paragraph, Heading, Div } from 'src/components/Base';
+import { FC } from 'src/utils/types';
 
-function Home() {
+const Home: FC = () => {
   return (
     <MainLayout>
       <Div className="alert alert-warning">
@@ -45,6 +46,6 @@ function Home() {
       </Paragraph>
     </MainLayout>
   );
-}
+};
 
 export default Home;

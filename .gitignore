@@ -6,11 +6,11 @@ yarn-error.log
 # Build directory
 .DS_Store
 
+.next
+
 tmp/
 dist/
 public/
 
+.history
 .favorites.json
-
-.next
-

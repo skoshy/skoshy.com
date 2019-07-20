@@ -31,6 +31,7 @@ module.exports = {
     // 'react/default-props-match-prop-types': 2,
     // 'react/require-default-props': 2,
     'import/first': 2,
+    'import/newline-after-import': 2,
     'import/order': [
       'error',
       {
@@ -42,6 +43,7 @@ module.exports = {
           'sibling',
           'index',
         ],
+        "newlines-between": "never",
       },
     ],
     'no-restricted-imports': [
@@ -68,7 +70,8 @@ module.exports = {
       version: 'detect', // Tells eslint-plugin-react to automatically detect the version of React to use
     },
     'import/resolver': {
-      node: {
+      'babel-plugin-root-import': {},
+      'node': {
         paths: ['./'],
       },
     },

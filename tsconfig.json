@@ -14,8 +14,15 @@
     "noEmit": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "typeRoots": ["./src/typings", "./next-env.d.ts"]
   },
-  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
+  "include": [
+    "./next-env.d.ts",
+    "./pages/**/*.tsx",
+    "./pages/**/*.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.ts"
+  ],
   "exclude": ["node_modules", "src/**/tests/*.ts", "src/**/tests/*.tsx"]
 }

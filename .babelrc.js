@@ -9,11 +9,6 @@ module.exports = {
       },
     ],
   ],
-  settings: {
-    'import/resolver': {
-      'babel-plugin-root-import': {},
-    },
-  },
   env: {
     // For React Native
     production: {
