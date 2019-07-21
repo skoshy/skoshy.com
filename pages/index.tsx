@@ -3,6 +3,7 @@ import { MainLayout } from 'src/layouts/Main';
 import { Header } from 'src/components/Header';
 import { Paragraph, Heading, Div } from 'src/components/Base';
 import { FC } from 'src/utils/types';
+import { Link } from 'src/components/Link';
 
 const Home: FC = () => {
   return (
@@ -26,17 +27,21 @@ const Home: FC = () => {
       </Heading>
       <Paragraph>
         Working at{' '}
-        <a href="https://common.com" rel="noopener noreferrer" target="_blank">
+        <Link
+          href="https://common.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           Common
-        </a>
+        </Link>
         , previously a{' '}
-        <a
+        <Link
           href="https://nextjump.com"
           rel="noopener noreferrer"
           target="_blank"
         >
           Next Jumper
-        </a>
+        </Link>
         , currently residing in New York City
       </Paragraph>
       <Heading>Web Development is my passion</Heading>

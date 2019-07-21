@@ -1,26 +1,30 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes, DetailedHTMLProps } from 'react';
 import { css } from 'styled-components';
+import NextLink from 'next/link';
 import { FC } from 'src/utils/types';
-import { Link } from './Link';
+import { mainLinkStyle } from 'src/themes/styles';
 
-interface Types {
-  to: string;
+interface Types
+  extends DetailedHTMLProps<
+    ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  > {
+  href: string;
 }
 
-// + [edit] define the component itself
-export const Button: FC<Types> = ({ children, to, ...props }) => {
-  const style = css`
-    border: 2px solid white;
-    border-radius: 1em;
-    display: inline-block;
-    margin: 0 0.5em;
-    padding: 0.8em;
-    text-align: center;
-  `;
+export const Button: FC<Types> = ({ children, href, ...props }) => {
+  const style = {
+    button: css`
+      background: none;
+      padding: 5px;
+    `,
+  };
 
   return (
-    <Link css={style} to={to} {...props}>
-      {children}
-    </Link>
+    <NextLink href={href}>
+      <button css={[mainLinkStyle, style.button]} {...props}>
+        {children}
+      </button>
+    </NextLink>
   );
 };
