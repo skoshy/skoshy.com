@@ -117,7 +117,10 @@ const MyStyles = css`
   dd,
   dl,
   hr,
-  fieldset {
+  fieldset,
+  table,
+  pre,
+  figure {
     margin-bottom: 1rem;
   }
 
@@ -125,7 +128,10 @@ const MyStyles = css`
     font-weight: bold;
   }
 
-  pre {
+  pre,
+  code,
+  kbd,
+  samp {
     font-family: monospace;
   }
 
@@ -170,6 +176,19 @@ const MyStyles = css`
     margin-left: 0.5rem;
     padding-left: 0.5rem;
     border-left: 1px solid gray;
+  }
+
+  td,
+  th {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+  }
+
+  caption,
+  th {
+    padding: 0.5rem;
+    background: #ccc;
+    border: 1px solid #ccc;
   }
 `;
 
