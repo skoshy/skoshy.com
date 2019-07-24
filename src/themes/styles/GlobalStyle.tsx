@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
+const CSSReset = css`
   /*! minireset.css v0.0.5 | MIT License | github.com/jgthms/minireset.css */
   /*
     A tiny modern CSS reset that covers the basics:
@@ -50,10 +50,6 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: normal;
   }
 
-  ul {
-    list-style: none;
-  }
-
   button,
   input,
   select,
@@ -91,4 +87,93 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     text-align: left;
   }
+`;
+
+const MyStyles = css`
+  * {
+    font-family: 'Archivo', 'Arial', sans-serif;
+    line-height: inherit;
+  }
+
+  html {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  fieldset {
+    padding: 1rem 1rem 0;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  blockquote,
+  ol,
+  ul,
+  dd,
+  dl,
+  hr,
+  fieldset {
+    margin-bottom: 1rem;
+  }
+
+  dt {
+    font-weight: bold;
+  }
+
+  pre {
+    font-family: monospace;
+  }
+
+  ol,
+  ul {
+    padding-left: 1.25rem;
+  }
+
+  ul ul {
+    list-style-type: disc;
+    margin-bottom: 0;
+  }
+
+  li {
+    padding-left: 0.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 1.4rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 0.8rem;
+  }
+
+  blockquote {
+    margin-left: 0.5rem;
+    padding-left: 0.5rem;
+    border-left: 1px solid gray;
+  }
+`;
+
+export const GlobalStyle = createGlobalStyle`
+  ${CSSReset}
+  ${MyStyles}
 `;

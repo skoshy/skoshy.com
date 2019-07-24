@@ -4,12 +4,10 @@ import { Header } from 'src/components/Header';
 import { Paragraph, Heading, Div } from 'src/components/Base';
 import { FC } from 'src/utils/types';
 import { Link } from 'src/components/Link';
-import { GlobalStyle } from 'src/themes/styles';
 
 const Home: FC = () => {
   return (
     <MainLayout>
-      <GlobalStyle />
       <Div className="alert alert-warning">
         <Header />
         <Heading>Under Construction</Heading>

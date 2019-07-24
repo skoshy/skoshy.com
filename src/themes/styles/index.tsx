@@ -1,2 +1,2 @@
-export { GlobalStyle } from './GlobalStyle';
-export { mainLinkStyle } from './MainLinkStyle';
+export * from './GlobalStyle';
+export * from './MainLinkStyle';
