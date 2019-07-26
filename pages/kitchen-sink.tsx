@@ -701,9 +701,9 @@ const Home: FC = () => {
                         id="checkbox1"
                         name="checkbox"
                         type="checkbox"
-                        checked={true}
+                        defaultChecked={true}
                       />
-                      > Choice A
+                      Choice A
                     </label>
                   </li>
                   <li>
@@ -733,7 +733,7 @@ const Home: FC = () => {
                         name="radio"
                         type="radio"
                         className="radio"
-                        checked={true}
+                        defaultChecked={true}
                       />{' '}
                       Option 1
                     </label>
@@ -784,34 +784,40 @@ const Home: FC = () => {
                 <legend>HTML5 inputs</legend>
                 <p>
                   <label htmlFor="ic">Color input</label>
-                  <input type="color" id="ic" value="#000000" />>
+                  <input type="color" id="ic" defaultValue="#000000" />
                 </p>
                 <p>
                   <label htmlFor="in">Number input</label>
-                  <input type="number" id="in" min="0" max="10" value="5" />
+                  <input
+                    type="number"
+                    id="in"
+                    min="0"
+                    max="10"
+                    defaultValue="5"
+                  />
                 </p>
                 <p>
                   <label htmlFor="ir">Range input</label>
-                  <input type="range" id="ir" value="10" />
+                  <input type="range" id="ir" defaultValue="10" />
                 </p>
                 <p>
                   <label htmlFor="idd">Date input</label>
-                  <input type="date" id="idd" value="1970-01-01" />
+                  <input type="date" id="idd" defaultValue="1970-01-01" />
                 </p>
                 <p>
                   <label htmlFor="idm">Month input</label>
-                  <input type="month" id="idm" value="1970-01" />
+                  <input type="month" id="idm" defaultValue="1970-01" />
                 </p>
                 <p>
                   <label htmlFor="idw">Week input</label>
-                  <input type="week" id="idw" value="1970-W01" />
+                  <input type="week" id="idw" defaultValue="1970-W01" />
                 </p>
                 <p>
                   <label htmlFor="idt">Datetime input</label>
                   <input
                     type="datetime"
                     id="idt"
-                    value="1970-01-01T00:00:00Z"
+                    defaultValue="1970-01-01T00:00:00Z"
                   />
                 </p>
                 <p>
@@ -819,7 +825,7 @@ const Home: FC = () => {
                   <input
                     type="datetime-local"
                     id="idtl"
-                    value="1970-01-01T00:00"
+                    defaultValue="1970-01-01T00:00"
                   />
                 </p>
               </fieldset>
@@ -829,10 +835,14 @@ const Home: FC = () => {
               <fieldset id="forms__action">
                 <legend>Action buttons</legend>
                 <p>
-                  <input type="submit" value="<input type=submit>" />
-                  <input type="button" value="<input type=button>" />
-                  <input type="reset" value="<input type=reset>" />
-                  <input type="submit" value="<input disabled>" disabled />
+                  <input type="submit" defaultValue="<input type=submit>" />
+                  <input type="button" defaultValue="<input type=button>" />
+                  <input type="reset" defaultValue="<input type=reset>" />
+                  <input
+                    type="submit"
+                    defaultValue="<input disabled>"
+                    disabled
+                  />
                 </p>
                 <p>
                   <button type="submit">&lt;button type=submit&gt;</button>
