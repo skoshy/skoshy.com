@@ -1,12 +1,13 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "skoshy.com",
+  "description": "Stefan's Website",
   "version": "1.0.0",
   "author": "Stefan Koshy",
   "scripts": {
     "dev": "next --port 30483",
     "build": "next build",
-    "start": "next start",
+    "start": "next start --port 30484",
+    "serve": "npm run start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "npm run lint:eslint && npm run lint:prettier && npm run lint:styles",
     "lint:eslint": "eslint '{pages,src}/**/*.{tsx,ts,js,jsx}'",
