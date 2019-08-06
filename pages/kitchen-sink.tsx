@@ -149,28 +149,28 @@ const Home: FC = () => {
               </header>
               <div>
                 <p>
-                  A paragraph (from the Greek paragraphos, “to write beside” or
-                  “written beside”) is a self-contained unit of a discourse in
-                  writing dealing with a particular point or idea. A paragraph
-                  consists of one or more sentences. Though not required by the
-                  syntax of any language, paragraphs are usually an expected
-                  part of formal writing, used to organize longer prose.
+                  A paragraph (from the Greek, “to write beside” or “written
+                  beside”) is a self-contained unit of a discourse in writing
+                  dealing with a particular point or idea. A paragraph consists
+                  of one or more sentences. Though not required by the syntax of
+                  any language, paragraphs are usually an expected part of
+                  formal writing, used to organize longer prose.
                 </p>
                 <p>
-                  A paragraph (from the Greek paragraphos, “to write beside” or
-                  “written beside”) is a self-contained unit of a discourse in
-                  writing dealing with a particular point or idea. A paragraph
-                  consists of one or more sentences. Though not required by the
-                  syntax of any language, paragraphs are usually an expected
-                  part of formal writing, used to organize longer prose.
+                  A paragraph (from the Greek, “to write beside” or “written
+                  beside”) is a self-contained unit of a discourse in writing
+                  dealing with a particular point or idea. A paragraph consists
+                  of one or more sentences. Though not required by the syntax of
+                  any language, paragraphs are usually an expected part of
+                  formal writing, used to organize longer prose.
                 </p>
                 <p>
-                  A paragraph (from the Greek paragraphos, “to write beside” or
-                  “written beside”) is a self-contained unit of a discourse in
-                  writing dealing with a particular point or idea. A paragraph
-                  consists of one or more sentences. Though not required by the
-                  syntax of any language, paragraphs are usually an expected
-                  part of formal writing, used to organize longer prose.
+                  A paragraph (from the Greek, “to write beside” or “written
+                  beside”) is a self-contained unit of a discourse in writing
+                  dealing with a particular point or idea. A paragraph consists
+                  of one or more sentences. Though not required by the syntax of
+                  any language, paragraphs are usually an expected part of
+                  formal writing, used to organize longer prose.
                 </p>
               </div>
               <footer>
@@ -343,11 +343,11 @@ const Home: FC = () => {
                   <strong>Keyboard input:</strong> <kbd>Cmd</kbd>
                 </p>
                 <p>
-                  <strong>Inline code:</strong>{' '}
+                  <strong>Inline code:</strong> {}
                   <code>&lt;div&gt;code&lt;/div&gt;</code>
                 </p>
                 <p>
-                  <strong>Sample output:</strong>{' '}
+                  <strong>Sample output:</strong> {}
                   <samp>This is sample output from a computer program.</samp>
                 </p>
                 <h2>Pre-formatted text</h2>
@@ -394,7 +394,7 @@ const Home: FC = () => {
                   explicitly rendered, non-textual annotation.
                 </p>
                 <p>
-                  <del>This text is deleted</del> and{' '}
+                  <del>This text is deleted</del> and {}
                   <ins>This text is inserted</ins>.
                 </p>
                 <p>
@@ -412,7 +412,7 @@ const Home: FC = () => {
                   </small>
                 </p>
                 <p>
-                  Abbreviation:{' '}
+                  Abbreviation: {}
                   <abbr title="HyperText Markup Language">HTML</abbr>
                 </p>
                 <p>
@@ -430,11 +430,11 @@ const Home: FC = () => {
                   The <mark>mark element</mark> indicates a highlight.
                 </p>
                 <p>
-                  The <var>variable element</var>, such as <var>x</var> ={' '}
+                  The <var>variable element</var>, such as <var>x</var> = {}
                   <var>y</var>.
                 </p>
                 <p>
-                  The time element:{' '}
+                  The time element: {}
                   <time dateTime="2013-04-06T12:32+00:00">2 weeks ago</time>
                 </p>
               </div>
@@ -481,7 +481,7 @@ const Home: FC = () => {
                   />
                 </p>
                 <h3>
-                  Wrapped in a <code>&lt;figure&gt;</code> element, no{' '}
+                  Wrapped in a <code>&lt;figure&gt;</code> element, no {}
                   <code>&lt;figcaption&gt;</code>
                 </h3>
                 <figure>
@@ -491,7 +491,7 @@ const Home: FC = () => {
                   />
                 </figure>
                 <h3>
-                  Wrapped in a <code>&lt;figure&gt;</code> element, with a{' '}
+                  Wrapped in a <code>&lt;figure&gt;</code> element, with a {}
                   <code>&lt;figcaption&gt;</code>
                 </h3>
                 <figure>
@@ -731,19 +731,19 @@ const Home: FC = () => {
                         type="checkbox"
                         defaultChecked={true}
                       />
-                      Choice A
+                      {} Choice A
                     </label>
                   </li>
                   <li>
                     <label htmlFor="checkbox2">
-                      <input id="checkbox2" name="checkbox" type="checkbox" />{' '}
-                      Choice B
+                      <input id="checkbox2" name="checkbox" type="checkbox" />
+                      {} Choice B
                     </label>
                   </li>
                   <li>
                     <label htmlFor="checkbox3">
-                      <input id="checkbox3" name="checkbox" type="checkbox" />{' '}
-                      Choice C
+                      <input id="checkbox3" name="checkbox" type="checkbox" />
+                      {} Choice C
                     </label>
                   </li>
                 </ul>
@@ -762,8 +762,8 @@ const Home: FC = () => {
                         type="radio"
                         className="radio"
                         defaultChecked={true}
-                      />{' '}
-                      Option 1
+                      />
+                      {} Option 1
                     </label>
                   </li>
                   <li>
@@ -773,8 +773,8 @@ const Home: FC = () => {
                         name="radio"
                         type="radio"
                         className="radio"
-                      />{' '}
-                      Option 2
+                      />
+                      {} Option 2
                     </label>
                   </li>
                   <li>
@@ -784,8 +784,8 @@ const Home: FC = () => {
                         name="radio"
                         type="radio"
                         className="radio"
-                      />{' '}
-                      Option 3
+                      />
+                      {} Option 3
                     </label>
                   </li>
                 </ul>
@@ -889,7 +889,8 @@ const Home: FC = () => {
         </main>
         <footer role="contentinfo">
           <p>
-            Made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on{' '}
+            Made by {}
+            <a href="http://twitter.com/cbracco">@cbracco</a>. Code on {}
             <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.
           </p>
         </footer>

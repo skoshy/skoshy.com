@@ -16,7 +16,7 @@ const Home: FC = () => {
         </Paragraph>
       </Div>
       <Heading>
-        Howdy{' '}
+        Howdy {}
         <span role="img" aria-label="smiley">
           😊
         </span>
@@ -26,7 +26,7 @@ const Home: FC = () => {
         Koshy
       </Heading>
       <Paragraph>
-        Working at{' '}
+        Working at {}
         <Link
           href="https://common.com"
           rel="noopener noreferrer"
@@ -34,7 +34,7 @@ const Home: FC = () => {
         >
           Common
         </Link>
-        , previously a{' '}
+        , previously a {}
         <Link
           href="https://nextjump.com"
           rel="noopener noreferrer"
