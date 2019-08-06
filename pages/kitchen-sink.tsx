@@ -3,6 +3,22 @@ import { MainLayout } from 'src/layouts/Main';
 import { FC } from 'src/utils/types';
 
 const Home: FC = () => {
+  const canvasRef = React.createRef<HTMLCanvasElement>();
+
+  React.useEffect(() => {
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext('2d');
+
+    // Create gradient
+    const grd = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+    grd.addColorStop(0, 'red');
+    grd.addColorStop(1, 'white');
+
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+  }, []);
+
   return (
     <MainLayout>
       <div id="top" className="page" role="document">
@@ -495,7 +511,9 @@ const Home: FC = () => {
                 <h2>Audio</h2>
               </header>
               <div>
-                <audio controls={false}>audio</audio>
+                <audio src="/static/kitchen-sink/audio.mp3" controls={true}>
+                  audio
+                </audio>
               </div>
               <footer>
                 <p>
@@ -508,7 +526,15 @@ const Home: FC = () => {
                 <h2>Video</h2>
               </header>
               <div>
-                <video controls={false}>video</video>
+                <video
+                  src="/static/kitchen-sink/video.mp4"
+                  controls={true}
+                  style={{
+                    maxWidth: '100%',
+                  }}
+                >
+                  video
+                </video>
               </div>
               <footer>
                 <p>
@@ -521,7 +547,7 @@ const Home: FC = () => {
                 <h2>Canvas</h2>
               </header>
               <div>
-                <canvas>canvas</canvas>
+                <canvas ref={canvasRef}>canvas</canvas>
               </div>
               <footer>
                 <p>
@@ -577,7 +603,7 @@ const Home: FC = () => {
                 <h2>IFrame</h2>
               </header>
               <div>
-                <iframe src="index.html" height="300"></iframe>
+                <iframe src="/" height="300"></iframe>
               </div>
               <footer>
                 <p>
