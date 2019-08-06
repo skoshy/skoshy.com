@@ -185,9 +185,9 @@ const MyStyles = css`
   }
 
   blockquote {
+    border-left: 1px solid gray;
     margin-left: 0.5rem;
     padding-left: 0.5rem;
-    border-left: 1px solid gray;
   }
 
   td,
@@ -198,9 +198,9 @@ const MyStyles = css`
 
   caption,
   th {
-    padding: 0.5rem;
     background: #ccc;
     border: 1px solid #ccc;
+    padding: 0.5rem;
   }
 
   figure {
@@ -210,8 +210,8 @@ const MyStyles = css`
   }
 
   figcaption {
-    padding-top: 1rem;
     font-style: italic;
+    padding-top: 1rem;
   }
 `;
 

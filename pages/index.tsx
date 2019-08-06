@@ -22,8 +22,8 @@ const Home: FC = () => {
         </span>
       </Heading>
       <Heading>
-        I&apos;m <abbr title="Pronounced STEHP-on">Stefan</abbr> (or Steve)
-        Koshy
+        {`I'm `}
+        <abbr title="Pronounced STEHP-on">Stefan</abbr> (or Steve) Koshy
       </Heading>
       <Paragraph>
         Working at {}
