@@ -484,10 +484,12 @@ const Home: FC = () => {
                   Wrapped in a <code>&lt;figure&gt;</code> element, no{' '}
                   <code>&lt;figcaption&gt;</code>
                 </h3>
-                <img
-                  src="http://placekitten.com/420/420"
-                  alt="Image alt text"
-                />
+                <figure>
+                  <img
+                    src="http://placekitten.com/420/420"
+                    alt="Image alt text"
+                  />
+                </figure>
                 <h3>
                   Wrapped in a <code>&lt;figure&gt;</code> element, with a{' '}
                   <code>&lt;figcaption&gt;</code>

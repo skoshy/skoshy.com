@@ -74,7 +74,7 @@ const CSSReset = css`
   }
 
   iframe {
-    border: 0;
+    border: 1px solid black;
   }
 
   table {
@@ -104,6 +104,11 @@ const MyStyles = css`
     padding: 1rem 1rem 0;
   }
 
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
   p,
   h1,
   h2,
@@ -120,7 +125,14 @@ const MyStyles = css`
   fieldset,
   table,
   pre,
-  figure {
+  figure,
+  audio,
+  video,
+  canvas,
+  meter,
+  progress,
+  iframe,
+  svg {
     margin-bottom: 1rem;
   }
 
@@ -189,6 +201,17 @@ const MyStyles = css`
     padding: 0.5rem;
     background: #ccc;
     border: 1px solid #ccc;
+  }
+
+  figure {
+    background: grey;
+    display: inline-block;
+    padding: 1rem;
+  }
+
+  figcaption {
+    padding-top: 1rem;
+    font-style: italic;
   }
 `;
 
