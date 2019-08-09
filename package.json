@@ -15,7 +15,9 @@
     "lint:styles": "prettier-stylelint --write 'src/**/*.{css,scss,tsx,ts}' "
   },
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
     "next": "^9.0.3",
+    "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "ramda": "^0.26.1",
     "react": "^16.8.6",

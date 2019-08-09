@@ -798,9 +798,9 @@ const Home: FC = () => {
                   <label htmlFor="textarea">Textarea</label>
                   <textarea
                     id="textarea"
-                    rows={8}
-                    cols={48}
-                    placeholder="Enter your message here"
+                    rows={9}
+                    cols={60}
+                    placeholder="Placeholder: In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content still not being ready. Think of a news blog that's filled with content hourly on the day of going live. However, reviewers tend to be distracted by comprehensible content, say, a random text copied from a newspaper or the internet. The are likely to focus on the text, disregarding the layout and its elements. Besides, random text risks to be unintendedly humorous or offensive, an unacceptable risk in corporate environments."
                   ></textarea>
                 </p>
               </fieldset>

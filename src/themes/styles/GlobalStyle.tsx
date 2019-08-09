@@ -1,7 +1,13 @@
 import { createGlobalStyle, css } from 'styled-components';
 
+const colors = {
+  base: 'hsl(0, 0%, 15%)',
+  baseContrast: 'hsl(200, 12%, 95%)',
+  link: 'hsl(219, 83%, 53%)',
+};
+
 const CSSReset = css`
-  /*! minireset.css v0.0.5 | MIT License | github.com/jgthms/minireset.css */
+  /*! SK's CSS Reset, modified from minireset.css v0.0.5 | MIT License | github.com/jgthms/minireset.css */
   /*
     A tiny modern CSS reset that covers the basics:
 
@@ -12,6 +18,11 @@ const CSSReset = css`
     - sets the border-box box sizing: so that borders and paddings don't affect the set dimensions
     - sets responsive media elements: so that images and embeds scale with the browser width
   */
+
+  :root {
+    --main-font-family: 'Archivo', 'Arial', sans-serif;
+    --monospace-font-family: monospace;
+  }
 
   html,
   body,
@@ -50,6 +61,13 @@ const CSSReset = css`
     font-weight: normal;
   }
 
+  a {
+    color: ${colors.link};
+  }
+  a:hover {
+    color: ;
+  }
+
   button,
   input,
   select,
@@ -59,12 +77,18 @@ const CSSReset = css`
 
   html {
     box-sizing: border-box;
+    color: ${colors.base};
+    font-size: 16px;
+    line-height: 1.25;
   }
 
   *,
   *:before,
   *:after {
     box-sizing: inherit;
+    color: inherit;
+    font-family: var(--main-font-family);
+    line-height: inherit;
   }
 
   img,
@@ -90,16 +114,6 @@ const CSSReset = css`
 `;
 
 const MyStyles = css`
-  * {
-    font-family: 'Archivo', 'Arial', sans-serif;
-    line-height: inherit;
-  }
-
-  html {
-    font-size: 16px;
-    line-height: 1.25;
-  }
-
   fieldset {
     padding: 1rem 1rem 0;
   }
@@ -140,11 +154,12 @@ const MyStyles = css`
     font-weight: bold;
   }
 
+  textarea,
   pre,
   code,
   kbd,
   samp {
-    font-family: monospace;
+    font-family: var(--monospace-font-family);
   }
 
   ol,
@@ -185,26 +200,26 @@ const MyStyles = css`
   }
 
   blockquote {
-    border-left: 1px solid gray;
+    border-left: 1px solid ${colors.baseContrast};
     margin-left: 0.5rem;
     padding-left: 0.5rem;
   }
 
   td,
   th {
-    border: 1px solid #ddd;
+    border: 1px solid ${colors.baseContrast};
     padding: 0.5rem;
   }
 
   caption,
   th {
-    background: #ccc;
-    border: 1px solid #ccc;
+    background: ${colors.baseContrast};
+    border: 1px solid ${colors.baseContrast};
     padding: 0.5rem;
   }
 
   figure {
-    background: grey;
+    background: ${colors.baseContrast};
     display: inline-block;
     padding: 1rem;
   }
