@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Stefan Koshy",
   "scripts": {
-    "prepare": "npx use-yarn -m 'Please_use_yarn!'",
+    "preinstall": "npx use-yarn -m 'Please_use_yarn!'",
     "prestart": "npx use-yarn -m 'Please_use_yarn!'",
     "dev": "cross-env NODE_ENV=development next --port 30483",
     "build": "cross-env NODE_ENV=production next build",
@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "grommet": "2.7.10",
     "immer": "^4.0.1",
     "immer-reducer": "^0.7.7",
     "next": "^9.1.1",
