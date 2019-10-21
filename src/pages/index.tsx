@@ -1,20 +1,19 @@
 import React from 'react';
-import { MainLayout } from 'src/layouts/Main';
 import { Header } from 'src/components/Header';
-import { Paragraph, Heading, Div } from 'src/components/Base';
+import { MainLayout } from 'src/layouts/Main';
+import { Paragraph, Heading, Link } from 'src/components/base';
 import { FC } from 'src/utils/types';
-import { Link } from 'src/components/Link';
 
 const Home: FC = () => {
   return (
     <MainLayout>
-      <Div className="alert alert-warning">
+      <div className="alert alert-warning">
         <Header />
         <Heading>Under Construction</Heading>
         <Paragraph>
           Pardon the appearance, this site is still under construction!
         </Paragraph>
-      </Div>
+      </div>
       <Heading>
         Howdy {}
         <span role="img" aria-label="smiley">

@@ -2,7 +2,7 @@ import React from 'react';
 import { css } from 'styled-components';
 import FlexContainer from 'react-styled-flexbox';
 import { FC } from 'src/utils/types';
-import { Button } from './Button';
+import { Link } from 'src/components/base';
 
 interface Types {
   siteTitle?: string;
@@ -21,10 +21,10 @@ export const Header: FC<Types> = ({ siteTitle = '' }) => (
   <div css={style}>
     <FlexContainer>
       <h1 style={{ flex: 1, margin: 0 }}>
-        <Button href="/">{siteTitle}</Button>
+        <Link href="/">{siteTitle}</Link>
       </h1>
-      <Button href="/page-2">hi</Button>
-      <Button href="https://google.com">external</Button>
+      <Link href="/page-2">hi</Link>
+      <Link href="https://google.com">external</Link>
     </FlexContainer>
   </div>
 );
