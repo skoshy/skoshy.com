@@ -2,15 +2,16 @@
 .cache
 node_modules
 yarn-error.log
+tmp/
 
-# Build directory
 .DS_Store
 Thumbs.db
 
+# Build directory
 .next
 
-tmp/
-dist/
+# Export direction
+out/
 
 .history
 .favorites.json
