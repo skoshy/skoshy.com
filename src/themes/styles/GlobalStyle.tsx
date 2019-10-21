@@ -230,7 +230,11 @@ const MyStyles = css`
   }
 `;
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyleAsCss = css`
   ${CSSReset}
   ${MyStyles}
+`;
+
+export const GlobalStyle = createGlobalStyle`
+  ${GlobalStyleAsCss}
 `;

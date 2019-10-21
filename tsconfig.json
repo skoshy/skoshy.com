@@ -17,12 +17,6 @@
     "baseUrl": "./",
     "typeRoots": ["./src/typings", "./next-env.d.ts"]
   },
-  "include": [
-    "./next-env.d.ts",
-    "./pages/**/*.tsx",
-    "./pages/**/*.ts",
-    "./src/**/*.tsx",
-    "./src/**/*.ts"
-  ],
+  "include": ["./next-env.d.ts", "./src/**/*.tsx", "./src/**/*.ts"],
   "exclude": ["node_modules", "src/**/tests/*.ts", "src/**/tests/*.tsx"]
 }
