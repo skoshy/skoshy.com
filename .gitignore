@@ -5,12 +5,12 @@ yarn-error.log
 
 # Build directory
 .DS_Store
+Thumbs.db
 
 .next
 
 tmp/
 dist/
-public/
 
 .history
 .favorites.json
