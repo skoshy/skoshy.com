@@ -13,6 +13,7 @@ module.exports = phase => {
   return withSass({
     env: {
       ENV,
+      SITE_TITLE: 'Stefan Koshy',
     },
     cssModules: true,
     webpack(config) {

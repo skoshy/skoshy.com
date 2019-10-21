@@ -10,21 +10,28 @@ interface Types {
 
 const style = [
   css`
+    align-items: center;
     background: rebeccapurple;
-    margin: 0 auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    margin: 0;
     margin-bottom: 1.45rem;
     max-width: 960px;
+    padding: 8px;
+
+    a {
+      color: inherit;
+    }
   `,
 ];
 
-export const Header: FC<Types> = ({ siteTitle = '' }) => (
+export const Header: FC<Types> = ({ siteTitle = process.env.SITE_TITLE }) => (
   <div css={style}>
-    <FlexContainer>
-      <h1 style={{ flex: 1, margin: 0 }}>
-        <Link href="/">{siteTitle}</Link>
-      </h1>
-      <Link href="/page-2">hi</Link>
-      <Link href="https://google.com">external</Link>
-    </FlexContainer>
+    <h1 style={{ flex: 1, margin: 0 }}>
+      <Link href="/">{siteTitle}</Link>
+    </h1>
+    <Link href="/page-2">hi</Link>
+    <Link href="https://google.com">external</Link>
   </div>
 );

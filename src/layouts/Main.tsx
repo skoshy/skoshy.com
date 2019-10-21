@@ -7,7 +7,7 @@ import css from 'src/themes/styles/SkStyles.scss';
 import { withLayoutWrapper } from 'src/utils/withLayoutWrapper';
 
 const _MainLayout: FC<ComponentProps<'div'>> = ({ children, ...props }) => (
-  <div {...props} className={css.thing}>
+  <div {...props}>
     <link
       href="https://fonts.googleapis.com/css?family=Archivo&display=swap"
       rel="stylesheet"

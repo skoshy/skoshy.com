@@ -9,11 +9,11 @@ const Home: FC = () => {
     <MainLayout>
       <div className="alert alert-warning">
         <Header />
-        <Heading>Under Construction</Heading>
-        <Paragraph>
-          Pardon the appearance, this site is still under construction!
-        </Paragraph>
       </div>
+      <Heading>Under Construction</Heading>
+      <Paragraph>
+        Pardon the appearance, this site is still under construction!
+      </Paragraph>
       <Heading>
         Howdy {}
         <span role="img" aria-label="smiley">
@@ -22,7 +22,7 @@ const Home: FC = () => {
       </Heading>
       <Heading>
         {`I'm `}
-        <abbr title="Pronounced STEHP-on">Stefan</abbr> (or Steve) Koshy
+        <abbr title="Pronounced STEFF-on">Stefan</abbr> (or Steve) Koshy
       </Heading>
       <Paragraph>
         Working at {}
