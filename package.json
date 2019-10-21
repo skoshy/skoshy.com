@@ -8,6 +8,7 @@
     "prestart": "npx use-yarn -m 'Please_use_yarn!'",
     "dev": "cross-env NODE_ENV=development next --port 30483",
     "build": "cross-env NODE_ENV=production next build",
+    "export": "cross-env NODE_ENV=production next export",
     "start": "cross-env NODE_ENV=production next start --port 30484",
     "serve": "npm run start",
     "test": "echo \"Error: no test specified\" && exit 1",

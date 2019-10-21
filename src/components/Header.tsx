@@ -31,7 +31,6 @@ export const Header: FC<Types> = ({ siteTitle = process.env.SITE_TITLE }) => (
     <h1 style={{ flex: 1, margin: 0 }}>
       <Link href="/">{siteTitle}</Link>
     </h1>
-    <Link href="/page-2">hi</Link>
-    <Link href="https://google.com">external</Link>
+    <Link href="https://github.com/skoshy">GitHub</Link>
   </div>
 );
