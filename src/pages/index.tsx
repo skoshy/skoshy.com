@@ -7,9 +7,7 @@ import { FC } from 'src/utils/types';
 const Home: FC = () => {
   return (
     <MainLayout>
-      <div className="alert alert-warning">
-        <Header />
-      </div>
+      <Header />
       <Heading>Under Construction</Heading>
       <Paragraph>
         Pardon the appearance, this site is still under construction!
