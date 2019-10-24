@@ -10,17 +10,7 @@ export const Analytics = () => {
       <script
         defer
         dangerouslySetInnerHTML={{
-          __html: `
-            var _tcfg = _tcfg || [];
-            (function() {
-              _tcfg.push(["tags", ""]);
-              var u="https://cdn.ticksel.com/js/analytics_v1.0.js"; _tcfg.push(["account_id", 3357526]);
-              var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
-              g.type="text/javascript"; g.async=true; g.src=u; g.setAttribute("crossorigin", "anonymous");
-              g.setAttribute("integrity", "sha256-7grd8jMivCG0iCcJ7m/Ny4gvWb0mPVpFhRQovLkaUl8=");
-              s.parentNode.insertBefore(g,s);
-            })();
-          `,
+          __html: `var _tcfg=_tcfg||[];!function(){_tcfg.push(["tags",""]);_tcfg.push(["account_id",3357526]);var t=document,e=t.createElement("script"),s=t.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.src="https://cdn.ticksel.com/js/analytics_v1.0.js",e.setAttribute("crossorigin","anonymous"),e.setAttribute("integrity","sha256-7grd8jMivCG0iCcJ7m/Ny4gvWb0mPVpFhRQovLkaUl8="),s.parentNode.insertBefore(e,s)}();`,
         }}
       />
       <noscript
