@@ -2,10 +2,12 @@ name: Build and deploy
 
 on: 
   push:
-    branches:
-      - master
   release:
     types: [prereleased]
+    
+env:
+  NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+  NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
 
 jobs:
   build:
@@ -26,10 +28,13 @@ jobs:
       run: |
         yarn build
         yarn export
-    - name: Deploy to Netlify
+    - name: Deploy to Netlify (Prod)
+      if: github.ref == 'master'
       uses: netlify/actions/cli@master
       with: 
         args: deploy --dir=out --prod
-      env:
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+    - name: Deploy to Netlify (Preview)
+      if: github.ref != 'master'
+      uses: netlify/actions/cli@master
+      with: 
+        args: deploy --dir=out
