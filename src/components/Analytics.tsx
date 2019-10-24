@@ -1,8 +1,8 @@
 import React from 'react';
-import Head from 'next/head';
 import { isDev } from 'src/utils/constants';
+import { FC } from 'src/utils/types';
 
-export const Analytics = () => {
+export const Analytics: FC = () => {
   if (isDev) return null;
 
   return (
