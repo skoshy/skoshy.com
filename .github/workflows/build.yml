@@ -13,6 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: borales/actions-yarn@v2.0.0
+    - uses: netlify/actions/cli@master
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
@@ -21,10 +22,8 @@ jobs:
       run: |
         yarn build
         yarn export
-    - uses: netlify/actions/cli@master
-      with:
-        cmd: deploy --dir=out
+    - name: Deploy to Netlify
+      run: netlify deploy --dir=out
       env:
-        CI: true
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
