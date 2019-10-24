@@ -476,7 +476,7 @@ const Home: FC = () => {
                 </h3>
                 <p>
                   <img
-                    src="http://placekitten.com/480/480"
+                    src="https://placekitten.com/480/480"
                     alt="Image alt text"
                   />
                 </p>
@@ -486,7 +486,7 @@ const Home: FC = () => {
                 </h3>
                 <figure>
                   <img
-                    src="http://placekitten.com/420/420"
+                    src="https://placekitten.com/420/420"
                     alt="Image alt text"
                   />
                 </figure>
@@ -496,7 +496,7 @@ const Home: FC = () => {
                 </h3>
                 <figure>
                   <img
-                    src="http://placekitten.com/420/420"
+                    src="https://placekitten.com/420/420"
                     alt="Image alt text"
                   />
                   <figcaption>Here is a caption for this image.</figcaption>
@@ -642,7 +642,7 @@ const Home: FC = () => {
                   <input
                     id="input__webaddress"
                     type="url"
-                    placeholder="http://yoursite.com"
+                    placeholder="https://yoursite.com"
                   />
                 </p>
                 <p>
@@ -889,8 +889,8 @@ const Home: FC = () => {
         <footer role="contentinfo">
           <p>
             Made by {}
-            <a href="http://twitter.com/cbracco">@cbracco</a>. Code on {}
-            <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.
+            <a href="https://twitter.com/cbracco">@cbracco</a>. Code on {}
+            <a href="https://github.com/cbracco/html5-test-page">GitHub</a>.
           </p>
         </footer>
       </div>
