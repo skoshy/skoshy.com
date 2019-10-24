@@ -2,6 +2,7 @@ import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import styled, { ServerStyleSheet } from 'styled-components';
 import { GlobalStyleAsCss, GlobalStyle } from 'src/themes/styles';
+import { Analytics } from 'src/components/Analytics';
 
 export default class MyDocument extends Document {
   public static async getInitialProps(ctx): Promise<any> {
@@ -35,6 +36,7 @@ export default class MyDocument extends Document {
       <Html>
         <Head />
         <body>
+          <Analytics />
           <Main />
           <NextScript />
         </body>
