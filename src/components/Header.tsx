@@ -14,6 +14,7 @@ const style = [
     background: rebeccapurple;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    color: white;
     display: flex;
     margin: 0;
     margin-bottom: 1.45rem;

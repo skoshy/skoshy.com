@@ -7,3 +7,9 @@ For an overview of the project structure please refer to the [Gatsby documentati
 ## TypeScript support
 
 Added TypeScript with ESLint/Prettier support by following this tutorial - https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-typescript-project-53jb
+
+# Accesibility
+
+## Color
+
+https://medium.com/envoy-design/how-to-design-an-accessible-color-scheme-4a13ca12c92b
