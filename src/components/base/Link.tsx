@@ -24,7 +24,7 @@ export const Link: FC<Types> = ({ children, href, ...props }) => {
 
   return (
     <NextLink href={href}>
-      <a css={[style]} {...props}>
+      <a href={href} css={[style]} {...props}>
         {children}
       </a>
     </NextLink>
