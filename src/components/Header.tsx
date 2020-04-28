@@ -37,6 +37,7 @@ export const Header: FC<Types> = ({ siteTitle = process.env.SITE_TITLE }) => (
     </h1>
     <div className="link-list">
       <Link href="https://linkedin.com/in/skoshy">LinkedIn</Link>
+      <Link href="https://twitter.com/stekoshy">Twitter</Link>
       <Link href="https://github.com/skoshy">GitHub</Link>
     </div>
   </div>

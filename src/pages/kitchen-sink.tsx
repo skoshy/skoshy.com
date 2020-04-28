@@ -892,6 +892,9 @@ const Home: FC = () => {
             <a href="https://twitter.com/cbracco">@cbracco</a>. Code on {}
             <a href="https://github.com/cbracco/html5-test-page">GitHub</a>.
           </p>
+          <p>
+            Modified by Stefan
+          </p>
         </footer>
       </div>
     </MainLayout>
