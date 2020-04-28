@@ -34,6 +34,7 @@
     "editorIndentGuide.background": "#444",
     "editorIndentGuide.activeBackground": "#666",
     "activityBar.background": "#9b5357",
+    "activityBar.activeBorder": "#233e21",
     "activityBar.foreground": "#e7e7e7",
     "activityBar.inactiveForeground": "#e7e7e799",
     "activityBarBadge.background": "#233e21",
@@ -44,9 +45,15 @@
     "titleBar.inactiveForeground": "#e7e7e799",
     "statusBar.background": "#7a4144",
     "statusBarItem.hoverBackground": "#9b5357",
-    "statusBar.foreground": "#e7e7e7"
+    "statusBar.foreground": "#e7e7e7",
+    "activityBar.activeBackground": "#9b5357",
+    "statusBar.border": "#7a4144",
+    "titleBar.border": "#7a4144"
   },
   "favorites.sortDirection": "ASC",
   "dimmer.enabled": true,
-  "peacock.color": "#7a4144"
+  "peacock.color": "#7a4144",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
