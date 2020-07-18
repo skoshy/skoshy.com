@@ -1,6 +1,5 @@
 import React from 'react';
 import { css } from 'styled-components';
-import FlexContainer from 'react-styled-flexbox';
 import { FC } from 'src/utils/types';
 import { Link } from 'src/components/base';
 
