@@ -19,7 +19,6 @@
     "log": "node scripts/index.js"
   },
   "dependencies": {
-    "@zeit/next-sass": "1.0.1",
     "grommet": "2.13.0",
     "immer": "6.0.3",
     "next": "9.3.6",
@@ -31,6 +30,7 @@
     "react-styled-flexbox": "2.0.0",
     "react-typography": "0.16.19",
     "styled-components": "5.1.0",
+    "tailwindcss": "1.5.0",
     "typography": "0.16.19",
     "typography-theme-bootstrap": "0.16.19",
     "use-immer": "0.4.0"
