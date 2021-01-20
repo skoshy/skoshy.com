@@ -23,6 +23,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm install, build, and test
       run: |
+        yarn install
         yarn build
         yarn export
     - name: Deploy to Netlify
