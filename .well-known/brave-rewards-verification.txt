@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: skoshy.com
+Token: 1e01f28283c3e1010c4be62f1364354721c2542298ed7d12dd0fcfcdd514c1ae
