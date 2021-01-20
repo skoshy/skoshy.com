@@ -1,6 +1,6 @@
 name: Build and deploy
 
-on: 
+on:
   push:
     branches:
       - master
@@ -13,13 +13,12 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x]
+        node-version: [14.x]
 
     steps:
-    - uses: actions/checkout@v1
-    - uses: borales/actions-yarn@v2.0.0
+    - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
     - name: npm install, build, and test
@@ -28,7 +27,7 @@ jobs:
         yarn export
     - name: Deploy to Netlify
       uses: netlify/actions/cli@master
-      with: 
+      with:
         args: deploy --dir=out --prod
       env:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
