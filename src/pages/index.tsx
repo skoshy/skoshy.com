@@ -41,7 +41,7 @@ const Home: FC = () => {
         </Link>
         , currently residing in New York City
       </Paragraph>
-      <Heading>Web Development is my passion</Heading>
+      <Heading type="h4">Web Development is my passion</Heading>
       <Paragraph>
         Full Stack Javascript with React or Vue preferred, but experienced in
         PHP and Golang as well

@@ -30,7 +30,7 @@ const style = [
 ];
 
 export const Header: FC<Types> = ({ siteTitle = process.env.SITE_TITLE }) => (
-  <div css={style}>
+  <div className="" css={style}>
     <h1 style={{ flex: 1, margin: 0 }}>
       <Link href="/">{siteTitle}</Link>
     </h1>

@@ -6,7 +6,7 @@ const {
 } = require('next/constants');
 /* eslint-enable @typescript-eslint/no-var-requires */
 
-module.exports = phase => {
+module.exports = (phase) => {
   const ENV = phase === PHASE_DEVELOPMENT_SERVER ? 'development' : 'production'; // when `next build` or `npm run build` is used
 
   return {
