@@ -18,5 +18,15 @@ module.exports = (phase) => {
       config.resolve.modules.push(path.resolve('./'));
       return config;
     },
+    async redirects() {
+      return [
+        {
+          source: '/r/cassidoo-ProductList',
+          destination:
+            'https://codesandbox.io/s/cassidoo-productlist-jhufz?file=/src/index.tsx',
+          permanent: true,
+        },
+      ];
+    },
   };
 };
