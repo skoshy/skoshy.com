@@ -24,7 +24,7 @@ module.exports = (phase) => {
           source: '/r/cassidoo-ProductList',
           destination:
             'https://codesandbox.io/s/cassidoo-productlist-jhufz?file=/src/index.tsx',
-          permanent: true,
+          permanent: false,
         },
       ];
     },
