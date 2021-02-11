@@ -16,9 +16,7 @@ const style = [
     color: white;
     display: flex;
     margin: 0;
-    margin-bottom: 1.45rem;
     padding: 16px;
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
