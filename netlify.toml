@@ -1,3 +1,4 @@
 [[redirects]]
   from = "/r/cassidoo-productlist"
   to = "https://codesandbox.io/s/cassidoo-productlist-jhufz?file=/src/index.tsx"
+  status = 302
