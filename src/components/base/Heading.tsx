@@ -6,4 +6,6 @@ export const Heading = styled(
     const Tag = type;
     return <Tag {...props}>{children}</Tag>;
   }
-)``;
+).attrs((props) => ({
+  className: 'font-sans font-bold',
+}))``;
