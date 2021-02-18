@@ -2,3 +2,8 @@
   from = "/r/cassidoo-productlist"
   to = "https://codesandbox.io/s/cassidoo-productlist-jhufz?file=/src/index.tsx"
   status = 302
+
+[[redirects]]
+  from = "/r/cassidoo-makesentence"
+  to = "https://codesandbox.io/s/cassidoo-makesentence-24q5y?file=/src/index.tsx"
+  status = 302
