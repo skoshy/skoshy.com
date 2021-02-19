@@ -2,8 +2,6 @@ name: Build and deploy
 
 on:
   push:
-    branches:
-      - master
   release:
     types: [prereleased]
 
@@ -17,6 +15,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
+    - name: Extract branch name
+      shell: bash
+      run: echo "##[set-output name=branch;]${GITHUB_REF#refs/heads/}"
+      id: extract_branch
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
@@ -39,7 +42,12 @@ jobs:
       run: |
         yarn global add netlify-cli
         "$(yarn global bin)/netlify" --telemetry-disable
-        "$(yarn global bin)/netlify" deploy --dir=out --prod
+
+        # Determine if we should add the prod flag
+        if [ "${{ steps.extract_branch.outputs.branch }}" = "master" ]; then is_prod="--prod"; else is_prod=""; fi
+
+        # Deploy
+        "$(yarn global bin)/netlify" deploy --dir=out ${is_prod}
       env:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
