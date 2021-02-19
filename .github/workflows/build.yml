@@ -26,19 +26,39 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    # cache node_modules
-    - uses: actions/cache@v2
+    - name: Get yarn cache directory path
+      id: yarn-cache-dir-path
+      run: |
+          echo "::set-output name=dir::$(yarn cache dir)"
+
+    - name: Set yarn global bin path / installation path
+      run: |
+          yarn config set prefix $(yarn cache dir)
+          yarn config set global-folder $(yarn cache dir)
+
+    - name: Add yarn bin path to system path
+      run: |
+          echo $(yarn global bin) >> $GITHUB_PATH
+
+    - name: Cache global yarn
+      uses: actions/cache@v2
+      with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-global
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
       with:
         path: '**/node_modules'
         key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
-    # cache nextjs files
-    - uses: actions/cache@v2
+    - name: Cache Next.js files
+      uses: actions/cache@v2
       with:
         path: ${{ github.workspace }}/.next/cache
         key: ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}
 
-    - name: yarn install, build, and test
+    - name: yarn install and build
       run: |
         yarn install
         yarn build
@@ -47,13 +67,14 @@ jobs:
     - name: Netlify deploy
       run: |
         yarn global add netlify-cli
+
         "$(yarn global bin)/netlify" --telemetry-disable
 
         # Determine if we should add the prod flag
         if [ "${{ steps.extract_branch.outputs.branch }}" = "master" ]; then is_prod="--prod"; else is_prod=""; fi
 
         # Deploy
-        "$(yarn global bin)/netlify" deploy --dir=out ${is_prod}
+        netlify deploy --dir=out ${is_prod}
       env:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
