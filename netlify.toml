@@ -7,3 +7,8 @@
   from = "/r/cassidoo-makesentence"
   to = "https://codesandbox.io/s/cassidoo-makesentence-24q5y?file=/src/index.tsx"
   status = 302
+
+[[redirects]]
+  from = "/r/cassidoo-everyother"
+  to = "https://codesandbox.io/s/cassidoo-everyother-817im?file=/src/index.tsx"
+  status = 302
