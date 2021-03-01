@@ -12,3 +12,8 @@
   from = "/r/cassidoo-everyother"
   to = "https://codesandbox.io/s/cassidoo-everyother-817im?file=/src/index.tsx"
   status = 302
+
+[[redirects]]
+  from = "/r/cassidoo-numberofcans"
+  to = "https://codesandbox.io/s/cassidoo-numberofcans-se5l6?file=/src/index.tsx"
+  status = 302
