@@ -22,3 +22,8 @@
   from = "/r/cassidoo-validtttposition"
   to = "https://codesandbox.io/s/cassidoo-validtttposition-51hgv?file=/src/index.tsx"
   status = 302
+
+[[redirects]]
+  from = "/r/cassidoo-pascals"
+  to = "https://codesandbox.io/s/cassidoo-pascals-wjktp?file=/src/index.tsx"
+  status = 302
