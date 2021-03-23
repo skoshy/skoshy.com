@@ -27,3 +27,8 @@
   from = "/r/cassidoo-pascals"
   to = "https://codesandbox.io/s/cassidoo-pascals-wjktp?file=/src/index.tsx"
   status = 302
+
+[[redirects]]
+  from = "/r/cassidoo-maxnum"
+  to = "https://codesandbox.io/s/cassidoo-maxnum-50ryn?file=/src/index.tsx"
+  status = 302
