@@ -39,19 +39,27 @@ export const Hero = () => {
             <Paragraph>
               Working at {}
               <Link
+                href="https://www.hingehealth.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Hinge Health
+              </Link>
+              , previously at {}
+              <Link
                 href="https://common.com"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Common
               </Link>
-              , previously a {}
+              and {}
               <Link
                 href="https://nextjump.com"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Next Jumper
+                Next Jump
               </Link>
               , currently residing in New York City
             </Paragraph>
