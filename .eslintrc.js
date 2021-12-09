@@ -26,6 +26,7 @@ module.exports = {
         allowExpressions: true,
       },
     ],
+    'id-match': ['error', '([A-Z][a-z][0-9]_$)*'], // can help prevent unicode var attacks - https://portswigger.net/daily-swig/smuggling-hidden-backdoors-into-javascript-with-homoglyphs-and-invisible-unicode-characters
     'react/prop-types': 0,
     'import/first': 2,
     'import/newline-after-import': 2,
@@ -40,7 +41,7 @@ module.exports = {
           'sibling',
           'index',
         ],
-        "newlines-between": "never",
+        'newlines-between': 'never',
       },
     ],
     'no-restricted-imports': [
@@ -68,7 +69,7 @@ module.exports = {
     },
     'import/resolver': {
       'babel-plugin-root-import': {},
-      'node': {
+      node: {
         paths: ['./'],
       },
     },
