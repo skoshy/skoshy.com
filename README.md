@@ -1,8 +1,6 @@
-# gatsby-starter-default
+# Todo
 
-The default Gatsby starter.
-
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+Add https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/consistent-type-imports.md to ensure type imports are done properly, makes things a lot easier and prevents some circular dependency issues.
 
 ## TypeScript support
 
