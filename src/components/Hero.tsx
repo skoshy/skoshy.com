@@ -53,7 +53,7 @@ export const Hero = () => {
               >
                 Common
               </Link>
-              and {}
+              {} and {}
               <Link
                 href="https://nextjump.com"
                 rel="noopener noreferrer"
