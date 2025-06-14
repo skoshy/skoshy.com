@@ -46,12 +46,16 @@
     "statusBar.background": "#7a4144",
     "statusBarItem.hoverBackground": "#9b5357",
     "statusBar.foreground": "#e7e7e7",
-    "activityBar.activeBackground": "#9b5357"
+    "activityBar.activeBackground": "#9b5357",
+    "sash.hoverBorder": "#9b5357",
+    "statusBarItem.remoteBackground": "#7a4144",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799"
   },
   "favorites.sortDirection": "ASC",
   "dimmer.enabled": true,
   "peacock.color": "#7a4144",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   }
 }
