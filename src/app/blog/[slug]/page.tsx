@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 import { notFound } from 'next/navigation';
+import ClientBlogPostShell from './client-shell';
 
 interface BlogPostProps {
   params: { slug: string };
@@ -30,11 +31,5 @@ export default async function BlogPostPage({ params }: BlogPostProps) {
   const post = await getPost(params.slug);
   if (!post) return notFound();
 
-  return (
-    <main style={{ padding: '2rem', maxWidth: 700, margin: '0 auto' }}>
-      <h1>{post.title}</h1>
-      <p style={{ color: '#888', fontSize: '0.9em' }}>{post.date}</p>
-      <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
-    </main>
-  );
+  return <ClientBlogPostShell post={post} />;
 } 
