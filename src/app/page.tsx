@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { HiButton } from "@/modules/hi-button";
-import { ThemeToggle } from "@/modules/theme/theme-toggle";
 
 export default function Home() {
   return (
